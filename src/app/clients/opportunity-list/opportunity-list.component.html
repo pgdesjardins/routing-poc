@@ -1,0 +1,16 @@
+<ul>
+  <li *ngFor="let opp of opportunities">
+    <div>
+      <a *ngIf="opp.id !== selectedId" [routerLink]="['/clients', opp.id]">
+        {{opp.title}}
+      </a>
+      <a *ngIf="opp.id === selectedId" [class.selected]="opp.id === selectedId" [routerLink]="['/clients']">
+        {{opp.title}}
+      </a>
+    </div>
+    <div class="card-body" [class.card-body__colapsed]="opp.id !== selectedId"
+      [class.card-body__expanded]="opp.id === selectedId">
+      <div *ngIf="opp.id === selectedId">{{opp.body}}</div>
+    </div>
+  </li>
+</ul>

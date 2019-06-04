@@ -12,6 +12,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ShellComponent } from './layout/shell.component';
 import { LoginComponent } from './login/login.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
+import { OpportunityListComponent } from './clients/opportunity-list/opportunity-list.component';
+import { OpportunityCardComponent } from './clients/opportunity-card/opportunity-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { OnboardingComponent } from './onboarding/onboarding.component';
     PageNotFoundComponent,
     ShellComponent,
     LoginComponent,
-    OnboardingComponent
+    OnboardingComponent,
+    OpportunityListComponent,
+    OpportunityCardComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

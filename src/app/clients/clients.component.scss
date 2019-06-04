@@ -1,0 +1,16 @@
+.selected {
+  color: red;
+}
+
+.card-body {
+  transition: transform 0.3s ease-out;
+  transform-origin: top;
+}
+
+.card-body__expanded {
+  transform: scaleY(1);
+}
+
+.card-body__colapsed {
+  transform: scaleY(0);
+}

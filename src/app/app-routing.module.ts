@@ -14,6 +14,7 @@ import {
   OktaAuthGuard
 } from '@okta/okta-angular';
 
+// todo: extract to config
 const config = {
   issuer: 'https://dev-171804.okta.com/oauth2/default',
   redirectUri: 'http://localhost:4200/implicit/callback',

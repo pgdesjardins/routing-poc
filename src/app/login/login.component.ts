@@ -11,6 +11,7 @@ import * as OktaSignIn from '@okta/okta-signin-widget';
 export class LoginComponent implements OnInit {
   signIn;
   widget = new OktaSignIn({
+    // todo: extract to config
     baseUrl: 'https://dev-171804.okta.com'
   });
 

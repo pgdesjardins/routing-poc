@@ -13,6 +13,7 @@ export class ClientsComponent implements OnInit {
       console.log(params);
       this.selectedId = params.get('id');
     });
+
     this.oppList = [
       { id: '123', title: '123 title', body: '123 body' },
       { id: '456', title: '456 title', body: '456 body' },

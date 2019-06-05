@@ -1,17 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { OpportunityListComponent } from './opportunity-list.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('OpportunityListComponent', () => {
   let component: OpportunityListComponent;
   let fixture: ComponentFixture<OpportunityListComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ OpportunityListComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [OpportunityListComponent],
+        imports: [RouterTestingModule]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(OpportunityListComponent);
